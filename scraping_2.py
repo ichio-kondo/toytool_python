@@ -5,9 +5,9 @@ from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
 # ご自身のメールアドレス
-mail = 'i09036893379@me.com'
+mail = 'XXXXXX@me.com'
 # ご自身のパスワード
-password = 'ono123ono'
+password = 'XXXXXXXX'
 # ストアカの検索ワード
 search_word = 'Python'
 url = 'https://www.street-academy.com/'
