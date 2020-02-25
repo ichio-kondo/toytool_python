@@ -1,6 +1,6 @@
 # toytool_python
 
-## python用tool
+## python用Toy-Tools
 
     1.scraping1.py
         yahooNewsを1000件取得するスクレイピングサンプル
