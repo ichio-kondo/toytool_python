@@ -15,13 +15,14 @@ from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
 
+#/////////////////////////////////////////////////////////////////////////
+#定数及びXPATHの指定
 #URL
 url = "http://www.ehills.co.jp/rp/dfw/EHILLS/"
 #ID
 id = "soumu"
 #PASSWORD
-loginpass = "soum1998"
-
+loginpass = ""
 # メアド入力フォーム
 id_form_xpath = '//*[@id="loginboxText"]/input'
 # パスワード入力フォーム
@@ -36,7 +37,6 @@ aircon_button_xpath = '/html/body/form/table/tbody/tr/td/input[1]'
 aircon_click_reserve = '/html/body/form/table[2]/tbody/tr/td/input[3]'
 #予約一覧
 aircon_scheduled = '/html/body/form/table[2]/tbody/tr/td/input[1]'
-
 #空調場所エリア全選択（すべて選択）
 aircon_eria = '/html/body/form/font/input[7]'
 #120分延長ラジオボタンクリック
@@ -45,7 +45,7 @@ aircon_120 = '//*[@id="rbtStart_1"]'
 aircon_scheduled_save = '/html/body/form/font/input[5]'
 #予約表示
 aircon_view = '/html/body/form/font/input[3]'
-
+#/////////////////////////////////////////////////////////////////////////
 
 driver = webdriver.Chrome()
 driver.get(url)
@@ -74,7 +74,6 @@ driver.find_element_by_xpath(aircon_eria).send_keys(Keys.RETURN)
 driver.find_element_by_xpath(aircon_120).click()
 #予約ボタン
 #driver.find_element_by_xpath(aircon_scheduled_save).send_keys(Keys.RETURN)
-
 driver.implicitly_wait(2)
 #予約確認をする
 driver.find_element_by_xpath(aircon_scheduled).send_keys(Keys.RETURN)
