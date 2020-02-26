@@ -39,7 +39,6 @@ driver.find_element_by_xpath(email_form_xpath).send_keys(mail)
 driver.find_element_by_xpath(pass_form_xpath).send_keys(password)
 driver.find_element_by_xpath(login_submit_xpath).click()
 
-
 driver.find_element_by_xpath('//*[@id="logined_home_switch_prefecture"]').click()
 driver.find_element_by_xpath('//*[@id="logined_home_all_city_area"]/a').click()
 driver.find_element_by_xpath(keyword_xpath).send_keys(search_word)
