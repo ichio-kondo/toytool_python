@@ -22,7 +22,7 @@ url = "http://www.ehills.co.jp/rp/dfw/EHILLS/"
 #ID
 id = "soumu"
 #PASSWORD
-loginpass = ""
+loginpass = "soum1998"
 # メアド入力フォーム
 id_form_xpath = '//*[@id="loginboxText"]/input'
 # パスワード入力フォーム
