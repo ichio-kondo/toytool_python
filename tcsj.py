@@ -19,7 +19,7 @@ url = "https://procs.tcs-japan.co.jp/imart/top.portal"
 #ID
 loginId = "1001050090"
 #PASSWORD
-loginPass = "12345678qwerasdf!"
+loginPass = ""
 # ID入力用Xpath
 id_form_xpath = '/html/body/div[1]/div/div[2]/div/form/div/div[2]/div[1]/label/input'
 # パスワード入力フォーム
